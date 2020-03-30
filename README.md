@@ -10,6 +10,8 @@
 
 
 ## Version
+- 0.1.0:
+    - Using CSV to gather needed data --> loop through multiple customers
 - 1.0.0:
     - Hello World email sent
 ---  
