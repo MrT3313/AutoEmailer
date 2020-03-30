@@ -1,9 +1,10 @@
 import os
-# import smtplib
+import smtplib
 
 # Get Variables
 email = os.environ.get('M2LD_GMAIL_USERNAME')
 pw = os.environ.get('M2LD_GMAIL_PASSWORD')
+appPW = os.environ.get('APP_PASSWORD')
 
 # Assign YOUR Gmail Credentials
 sending = email
@@ -15,9 +16,20 @@ print(recieving)
 
 
 # Make Server
-# server = smtplib.SMTP('smtp.gmail.com', 587)
+server = smtplib.SMTP('smtp.gmail.com', 587)
 
 # Secure Connection
-# server.starttls()
+server.starttls()
 
+# Login
+# server.login(email, pw)
+server.login(email, appPW)
 
+# Create Message
+message = 'THIS IS WHAT I AM SENDING'
+
+# Send Message
+server.sendmail(sending, recieving, message)
+
+# Quit
+server.quit()
