@@ -8,10 +8,5 @@
 | URL                                                            | imap.gmail.com               | smtp.gmail.com                  |
 | Port                                                           | 993                          | (TSL/STARTTLS: 587)-(SSL: 465)  |
 
-- Incoming Mail (IMAP) Server
-    - imap.gmail.com
-    - requires
-
-
 ---  
 Author: Reed Turgeon
