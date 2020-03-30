@@ -8,5 +8,9 @@
 | URL                                                            | imap.gmail.com               | smtp.gmail.com                  |
 | Port                                                           | 993                          | (TSL/STARTTLS: 587)-(SSL: 465)  |
 
+
+## Version
+- 1.0.0:
+    - Hello World email sent
 ---  
 Author: Reed Turgeon
